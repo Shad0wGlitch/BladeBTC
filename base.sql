@@ -43,7 +43,6 @@ CREATE TABLE `bot_setting` (
   `support_chat_id` varchar(100) DEFAULT NULL,
   `wallet_id` varchar(200) DEFAULT NULL,
   `wallet_password` varchar(200) DEFAULT NULL,
-  `wallet_second_password` varchar(200) DEFAULT NULL,
   `jwt_issuer` varchar(3) DEFAULT 'CMS',
   `jwt_audience` varchar(3) DEFAULT 'All',
   `jwt_key` varchar(128) DEFAULT NULL,
