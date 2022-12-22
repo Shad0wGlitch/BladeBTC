@@ -158,7 +158,7 @@ make_install(){
 
     #install nodejs
     echo -e "\e[92mInstalling node.js ... [PLEASE WAIT]\e[0m"
-	curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+	curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 	echo -e "\e[92mInstalling node.js ... [DONE]\e[0m"
     apt-get install npm -y
 
