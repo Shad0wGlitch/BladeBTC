@@ -134,13 +134,13 @@ make_install(){
     #install mariadb
     apt-get install software-properties-common
     apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
-    add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://mirror.its.dal.ca/mariadb/repo/10.3/ubuntu bionic main'
+    add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://mirror.its.dal.ca/mariadb/repo/10.10.2/ubuntu focal-fossa main'
     apt update -y
-    echo -e "mariadb-server-10.3 mysql-server/root_password password $PASS" | debconf-set-selections
-    echo -e "mariadb-server-10.3 mysql-server/root_password_again password $PASS" | debconf-set-selections
+    echo -e "mariadb-server-10.10.2 mysql-server/root_password password $PASS" | debconf-set-selections
+    echo -e "mariadb-server-10.10.2 mysql-server/root_password_again password $PASS" | debconf-set-selections
 
     echo -e "\e[92mInstalling MariaDB ... [PLEASE WAIT]\e[0m"
-	apt install mariadb-server-10.3 mariadb-client-10.3 -y
+	apt install mariadb-server-10.10.2 mariadb-client-10.10.2 -y
 	service mysql restart
 	echo -e "\e[92mInstalling MariaDB ... [DONE]\e[0m"
 
