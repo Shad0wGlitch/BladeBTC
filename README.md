@@ -1,14 +1,14 @@
 
-# BladeBTC (UBUNTU 22.04 LTS)
+# BladeBTC (UBUNTU 20.04 - 22.x LTS)
 This application is a telegram bot. The goal of this bot is to create a Bitcoin exchange platform. It allows to send and receive Bitcoin via telegram and a Bitcoin wallet on Blockchain. It guarantees a profit on investments. Users can invest, reinvest and withdraw their Bitcoin at any time via the telegram interface.
 
 ## Prerequisites 
 
 This application is designed to be installed on a Linux server on which you have administrator access.
-This application and the installation script have been tried on a Ubuntu 22.04 LTS server.
+This application and the installation script have been tried on a Ubuntu 20.04 LTS server.
 
 - PHP 7.x - 8.x
-- Linux server (Ubuntu 22.04 LTS).
+- Linux server (Ubuntu 20.04 - 22.x LTS).
 - Root privileges.
 - Static IP (Public & Private).
 - Open ports 80, 443 (Before using the install script).
@@ -59,6 +59,7 @@ Your wallet ID should look like this:
 
 #### Server (Installation)
 
+- Download and Install [UBUNTU 20.04 LTS](https://www.ubuntu.com/download/server/thank-you?version=20.04&architecture=amd64)
 - Download and Install [UBUNTU 22.04 LTS](https://www.ubuntu.com/download/server/thank-you?version=22.04&architecture=amd64)
 > During the installation process of Ubuntu only select the SSH package.
 
