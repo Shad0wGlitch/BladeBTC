@@ -81,7 +81,7 @@ else
 
     cd /var/tmp
 
-    git clone https://github.com/nicelife90/BladeBTC.git update
+    git clone https://github.com/Shad0wGlitch/BladeBTC.git update
 
     cp -r ./update/BladeBTC /var/www/bot
 
