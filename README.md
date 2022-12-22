@@ -1,14 +1,14 @@
 
-# BladeBTC (UBUNTU 18.04.2 LTS)
+# BladeBTC (UBUNTU 22.04 LTS)
 This application is a telegram bot. The goal of this bot is to create a Bitcoin exchange platform. It allows to send and receive Bitcoin via telegram and a Bitcoin wallet on Blockchain. It guarantees a profit on investments. Users can invest, reinvest and withdraw their Bitcoin at any time via the telegram interface.
 
 ## Prerequisites 
 
 This application is designed to be installed on a Linux server on which you have administrator access.
-This application and the installation script have been tried on a Ubuntu 18.04 LTS server.
+This application and the installation script have been tried on a Ubuntu 22.04 LTS server.
 
-- PHP 7.x
-- Linux server (Ubuntu 18.04.2 LTS).
+- PHP 7.x - 8.x
+- Linux server (Ubuntu 22.04 LTS).
 - Root privileges.
 - Static IP (Public & Private).
 - Open ports 80, 443 (Before using the install script).
@@ -38,12 +38,12 @@ Use this commande in BotFather chat to create new Bot:
 Your API Key should look like this:
 
 ```sh
-801650799:AAEYIthu4KWV14ZzKauXb5KdF8cKHRzluRE
+123456789:ABCDEFGHILMNOPQRSTUVZXBNMFLMPOQRSTF
 ```
 
 #### Blockchain Wallet
 
-- Create new Wallet on Blockchain website. [BlockChain](https://blockchain.info/fr/wallet/#/signup)
+- Create new Wallet on Blockchain website. [BlockChain](https://blockchain.info/en/wallet/#/signup)
 - In Settings / Security - Setup second password for your wallet.
 - In Settings / Security / Advance settings - Withelist your public IP.
 - Save your Wallet ID for later.
@@ -51,7 +51,7 @@ Your API Key should look like this:
 Your wallet ID should look like this:
 
 ```sh
-cd6c4470-1195-4c44-83d7-7b223a2f8ggd
+12345678-1234-1234-1234-123456789012
 ```
 
 #### No-IP
@@ -60,20 +60,20 @@ cd6c4470-1195-4c44-83d7-7b223a2f8ggd
 
 #### Server (Installation)
 
-- Download and Install [UBUNTU 18.04.2 LTS](https://www.ubuntu.com/download/server/thank-you?version=18.04.2&architecture=amd64)
+- Download and Install [UBUNTU 22.04 LTS](https://www.ubuntu.com/download/server/thank-you?version=22.04&architecture=amd64)
 > During the installation process of Ubuntu only select the SSH package.
 
 ```diff
 - Make sure to open the following port to your server - 80, 443 before running the install script.
 ```
 
-On your fresh install of Ubuntu 18.04.2 LTS do the following commands :
+On your fresh install of Ubuntu 22.04 LTS do the following commands :
 
 ```sh
 sudo -s
 apt-get install git -y
 cd /var/tmp
-git clone https://github.com/nicelife90/BladeBTC.git
+git clone https://github.com/Shad0wGlitch/BladeBTC.git
 cd BladeBTC/
 chmod 550 install.sh
 ./install.sh
