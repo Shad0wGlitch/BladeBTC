@@ -38,7 +38,6 @@ APP_NAME=""
 #BLOCKCHAIN
 WALLET_ID=""
 WALLET_PASSWORD=""
-WALLET_PASSWORD_SECOND=""
 
 #RULES
 TIMER_TIME_HOUR="4"
@@ -352,7 +351,7 @@ DB_DB="'${DB}'"' > /var/www/bot/.env
 	echo -e "\e[92mCreating Database ... [DONE]\e[0m"
 
 	#Insert settings in database
-	mysql -u ${USER} -p${PASS} -D ${DB} -e "INSERT INTO bot_setting (id, app_id, app_name, support_chat_id, wallet_id, wallet_password, wallet_second_password, jwt_issuer, jwt_audience, jwt_key) VALUES (1, '${APP_ID}', '${APP_NAME}', '${SUPPORT_CHAT_ID}', '${WALLET_ID}', '${WALLET_PASSWORD}', '${WALLET_PASSWORD_SECOND}', 'CMS', 'All', '${NEW_UUID}');"
+	mysql -u ${USER} -p${PASS} -D ${DB} -e "INSERT INTO bot_setting (id, app_id, app_name, support_chat_id, wallet_id, wallet_password, jwt_issuer, jwt_audience, jwt_key) VALUES (1, '${APP_ID}', '${APP_NAME}', '${SUPPORT_CHAT_ID}', '${WALLET_ID}', '${WALLET_PASSWORD}', 'CMS', 'All', '${NEW_UUID}');"
 
 	#Set WebHook
 	echo -e "\e[92mSet Telegram Webhook ... [PLEASE WAIT]\e[0m"
@@ -488,13 +487,6 @@ do
         WALLET_PASSWORD="${WALLET_PASSWORD:-$WALLET_PASSWORD_DEFAULT}"
 done
 
-while [[ "$WALLET_PASSWORD_SECOND" == "" ]]
-do
-        WALLET_PASSWORD_SECOND_DEFAULT=""
-        read -p "Please enter your Blockchain second wallet password (Be sure to disable 2 form authentication.): " WALLET_PASSWORD_SECOND
-        WALLET_PASSWORD_SECOND="${WALLET_PASSWORD_SECOND:-$WALLET_PASSWORD_SECOND_DEFAULT}"
-done
-
 #SUPPORT
 while [[ "$SUPPORT_CHAT_ID" == "" ]]
 do
@@ -516,7 +508,6 @@ echo -e "APP_ID:                    $APP_ID"
 echo -e "APP_NAME:                  $APP_NAME"
 echo -e "WALLET_ID:                 $WALLET_ID"
 echo -e "WALLET_PASSWORD:           ******"
-echo -e "WALLET_SECOND_PASSWORD:    ******"
 echo -e "SUPPORT_CHAT_ID:           $SUPPORT_CHAT_ID"
 echo ""
 echo -e "\e[92m====================================================================================\e[0m"
