@@ -44,7 +44,6 @@ Your API Key should look like this:
 #### Blockchain Wallet
 
 - Create new Wallet on Blockchain website. [BlockChain](https://blockchain.info/en/wallet/#/signup)
-- In Settings / Security - Setup second password for your wallet.
 - In Settings / Security / Advance settings - Withelist your public IP.
 - Save your Wallet ID for later.
 

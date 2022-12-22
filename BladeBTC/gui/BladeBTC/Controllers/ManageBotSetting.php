@@ -26,7 +26,6 @@ class ManageBotSetting
         $support_chat_id = Request::post('support_chat_id');
         $wallet_id = Request::post('wallet_id');
         $wallet_password = Request::post('wallet_password');
-        $wallet_second_password = Request::post('wallet_second_password');
 
         /**
          * Validate
@@ -50,11 +49,7 @@ class ManageBotSetting
         if (empty($wallet_password)) {
             throw new Exception("You must enter a contract time in days.");
         }
-
-        if (empty($wallet_second_password)) {
-            throw new Exception("You must enter a commission rate percentage.");
-        }
-
+        
         /**
          * Prepare data
          */
@@ -64,7 +59,6 @@ class ManageBotSetting
             "support_chat_id" => $support_chat_id,
             "wallet_id" => $wallet_id,
             "wallet_password" => $wallet_password,
-            "wallet_second_password" => $wallet_second_password,
         ];
 
         try {

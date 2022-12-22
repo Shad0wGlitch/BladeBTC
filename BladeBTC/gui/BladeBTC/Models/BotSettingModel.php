@@ -49,7 +49,6 @@ class BotSettingModel
                             `support_chat_id` = :support_chat_id,
                             `wallet_id` = :wallet_id,
                             `wallet_password` = :wallet_password,
-                            `wallet_second_password` = :wallet_second_password
                         WHERE
                            id = 1";
 
@@ -61,7 +60,6 @@ class BotSettingModel
             "support_chat_id" => $data["support_chat_id"],
             "wallet_id" => $data["wallet_id"],
             "wallet_password" => $data["wallet_password"],
-            "wallet_second_password" => $data["wallet_second_password"],
         ]);
     }
 }

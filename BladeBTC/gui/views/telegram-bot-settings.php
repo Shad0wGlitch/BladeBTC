@@ -112,18 +112,7 @@ use BladeBTC\GUI\Models\BotSettingModel;
                                                            name="wallet_password" type="password"
                                                            value="<?php echo BotSettingModel::getValueByName("wallet_password"); ?>">
                                                 </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-6 col-lg-6">
-                                                <label>Blockchain Wallet Second Password</label>
-                                                <div class="input-group"><span class="input-group-addon"><i
-                                                                class="fa fa-key"></i></span>
-                                                    <input id="wallet_second_password" class="form-control"
-                                                           name="wallet_second_password"
-                                                           type="password"
-                                                           value="<?php echo BotSettingModel::getValueByName("wallet_second_password"); ?>">
-                                                </div>
-                                            </div>
-
+                                            </div>   
                                         </div>
                                         <br/>
                                         <div class="row">
@@ -164,7 +153,6 @@ use BladeBTC\GUI\Models\BotSettingModel;
     <script type="text/javascript">
         function showPassword() {
             var x = document.getElementById("wallet_password");
-            var y = document.getElementById("wallet_second_password");
 
             if (x.type === "password") {
                 x.type = "text";
