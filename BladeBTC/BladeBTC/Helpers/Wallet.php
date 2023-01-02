@@ -44,6 +44,7 @@ class Wallet
              */
             $wallet = BotSetting::getValueByName("wallet_id");
             $main_password = BotSetting::getValueByName("wallet_password");
+        
             $label = $telegram_user_id;
 
             /**
@@ -75,6 +76,7 @@ class Wallet
          */
         $wallet = BotSetting::getValueByName("wallet_id");
         $main_password = BotSetting::getValueByName("wallet_password");
+      
 
         /**
          * Request URL
@@ -104,6 +106,7 @@ class Wallet
          */
         $wallet = BotSetting::getValueByName("wallet_id");
         $main_password = BotSetting::getValueByName("wallet_password");
+      
         $fee = InvestmentPlan::getValueByName("withdraw_fee");
 
         /**
