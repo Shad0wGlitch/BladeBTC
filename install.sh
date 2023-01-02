@@ -123,7 +123,7 @@ make_install(){
 
     #certbot source
     echo -e "\e[92mInstalling Certbot ... [PLEASE WAIT]\e[0m"
-    apt install certbot python3-certbot-apache
+    apt install certbot python3-certbot-apache -y
     echo -e "\e[92mInstalling Certbot ... [DONE]\e[0m"
     
     #enabling https
