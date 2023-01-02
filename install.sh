@@ -563,7 +563,8 @@ check_database_version() {
 show_menus() {
 	clear
 	echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"	
-	echo "			M A I N - M E N U"
+	echo "		M A I N - M E N U          "
+	echo "	 Updated with ❤ by Shad0wGlitch   "
 	echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 	echo "1. Install"
 	echo "2. Update - (BOT SCRIPT / GUI)"
