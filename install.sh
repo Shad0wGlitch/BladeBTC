@@ -124,7 +124,7 @@ make_install(){
     #certbot source
     echo -e "\e[92mInstalling Certbot ... [PLEASE WAIT]\e[0m"
     apt install --classic certbot
-    echo -e "\e[92mInstallation Completed ... [DONE]\e[0m"
+    echo -e "\e[92mInstalling Certbot ... [DONE]\e[0m"
 
     #install some other package
 	echo -e "\e[92mInstalling all needed package ... [PLEASE WAIT]\e[0m"
