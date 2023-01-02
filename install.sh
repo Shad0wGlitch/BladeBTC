@@ -122,8 +122,8 @@ make_install(){
 	echo -e "\e[92mUpdating server ... [DONE]\e[0m"
 
     #certbot source
-    echo -e "\e[92mAdding source for Certbot ... [PLEASE WAIT]\e[0m"
-    add-apt-repository ppa:certbot/certbot -y
+    echo -e "\e[92mInstalling Certbot ... [PLEASE WAIT]\e[0m"
+    apt install --classic certbot
     echo -e "\e[92mAdding source for Certbot ... [DONE]\e[0m"
 
     #install some other package
